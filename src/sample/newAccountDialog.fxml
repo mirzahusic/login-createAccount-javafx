@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.NewAccountController"
+            prefHeight="200.0" prefWidth="400.0"
+            fx:id="dialogPane">
+
+    <content>
+        <GridPane alignment="CENTER" vgap="10" hgap="10">
+            <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"></Label>
+            <TextField fx:id="accountNameTextField" GridPane.rowIndex="0" GridPane.columnIndex="1" promptText="Only characters" ></TextField>
+            <Label text="Account Number:" GridPane.rowIndex="1" GridPane.columnIndex="0"></Label>
+            <TextField fx:id="accountNumberTextField" GridPane.rowIndex="1" GridPane.columnIndex="1" promptText="Must have 6 digits"></TextField>
+            <Label text="Pin:" GridPane.rowIndex="2" GridPane.columnIndex="0"></Label>
+            <TextField fx:id="accountPinTextField" GridPane.rowIndex="2" GridPane.columnIndex="1" promptText="Must have 4 digits"></TextField>
+        </GridPane>
+
+
+    </content>
+
+</DialogPane>
